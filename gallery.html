@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth hover:scroll-auto">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gallery - Magnolia Garden</title>
+</head>
+
+<body class="font-serif">
+    <a class="bottom-0 right-0 bg-white shadow-lg fixed animate-bounce text-2xl text-purple rounded-full p-5 m-4 border-2"
+        href="#top">
+        ↑
+    </a>
+    <!-- <div class=""> -->
+    <div class="top-0 sticky bg-white">
+        <!-- <div id="navbar" class="z-10 flex flex-row px-4 py-3 text-center w-100">
+            <div class="w-full"><a href="./index.html"><img src="./media/images/logo1.jpeg" alt="logo"
+                        class="py-2 mx-5 w-20" /></a>
+            </div>
+            <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
+                href="./index.html">Home
+            </a>
+            <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
+                href="./guidelines.html">Guidelines
+            </a>
+        </div> -->
+        <nav class="bg-white shadow-lg top-0 sticky z-10">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex flex-row justify-between">
+                    <div class="flex space-x-7">
+                        <!--Website Logo-->
+
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="./media/images/logo1.jpeg" alt="Logo" class="h-8 w-8 lg:w-20 lg:h-20 mr-2">
+                            <!-- <span class="font-semibold text-gray-500 text-lg">
+                                    Navigation
+                                </span> -->
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="./index.html"
+                            class="py-4 px-2 text-gray-500 hover:text-orange-800 hover:border-b-4 hover:border-orange-800 font-semibold">
+                            Home
+                        </a>
+                        <a href="./guidelines.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:border-b-4 hover:border-orange-800 hover:text-orange-800 transition duration-300">
+                            Guidelines
+                        </a>
+                        <a href="./gallery.html"
+                            class="py-4 px-2 text-gray-500 font-semibold border-b-4 border-orange-800 hover:text-orange-800 transition duration-300">
+                            Gallery
+                        </a>
+                        <a href="./index.html#contact-us"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-orange-800 transition duration-300">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none menu-button">
+                            <svg class="w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewBox="0 00 24 24" stroke="currentColor">
+                                <path d="m4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden mobile-menu bg-white">
+                    <ul class="flex flex-col text-center">
+                        <li class="active">
+                            <a href="./index.html"
+                                class="block.text-sm.px-2.py-4 hover:transition-150 text-white bg-orange-800 font-semibold">
+                                Home
+                        </li>
+                        <li>
+                            <a href="./guidelines.html"
+                                class="block.text-sm.px-2.py-4 hover:bg-orange-800 transition duration-300">
+                                Guidelines
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html"
+                                class="block.text-sm.px-2.py-4 hover:bg-orange-800 transition duration-300">
+                                Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.html#contact-us"
+                                class="block.text-sm.px-2.py-4 hover:bg-orange-800 transition duration-300">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="top" class="my-10"></div>
+    <div id="gallery" class="mx-5">
+        <div class="text-center font-serif italic font-bold text-4xl">Gallery</div>
+        <div id="masonry"
+            class="lg:columns-3 columns-1 md:columns-2 rounded-lg lg:border-2 shadow-lg p-2 lg:p-4 lg:m-3">
+            <img src="./media/images/img1.jpeg" title="A"
+                class="m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <img src="./media/images/img2.jpeg" title="B"
+                class="m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <img src="./media/images/img3.jpeg" title="C"
+                class="m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <img src="./media/images/img4.jpeg" title="D"
+                class="m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <img src="./media/images/img5.jpeg" title="E"
+                class="m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <img src="./media/images/img6.jpeg" title="F"
+                class="m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+
+        </div>
+    </div>
+    <script src="./static/js/navbar.js"></script>
+</body>
+
+</html>

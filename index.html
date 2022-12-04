@@ -11,26 +11,102 @@
 
 <body class="font-serif">
     <a class="bottom-0 right-0 bg-white shadow-lg fixed animate-bounce text-2xl text-purple rounded-full p-5 m-4 border-2"
-        href="#contact-us">
-        ↓
+        href="#top">
+        ↑
     </a>
     <!-- <div class=""> -->
-    <div class="top-0 sticky bg-white">
+    <!-- <div class="top-0 sticky bg-white z-10">
         <div id="navbar" class="flex flex-row px-4 py-3 text-center w-100">
-            <div class="w-full"><a href="./index.html"><img src="./media/images/logo1.jpeg" alt="logo"
+            <div class="w-50"><a href="./index.html"><img src="" alt="logo"
                         class="py-2 mx-5 w-20" /></a>
             </div>
-            <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
-                href="#about-us">About
-            </a>
-            <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
-                href="#contact-us">Contact
-            </a>
-            <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
-                href="./guidelines.html">Guidelines
-            </a>
+            <div id="links" class="w-50 my-5">
+                <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
+                    href="#about-us">About
+                </a>
+                <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
+                    href="#contact-us">Contact
+                </a>
+                <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
+                    href="./guidelines.html">Guidelines
+                </a>
+                <a class="p-3 my-5 rounded-md hover:bg-orange-800 text-black hover:text-white font-bold"
+                    href="./gallery.html">Gallery
+                </a>
+            </div>
+    </div> -->
+    <nav class="bg-white shadow-lg top-0 sticky z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-row justify-between">
+                <div class="flex space-x-7">
+                    <!--Website Logo-->
+
+                    <a href="#" class="flex items-center py-4 px-2">
+                        <img src="./media/images/logo1.jpeg" alt="Logo" class="h-8 w-8 lg:w-20 lg:h-20 mr-2">
+                        <!-- <span class="font-semibold text-gray-500 text-lg">
+                            Navigation
+                        </span> -->
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="./index.html"
+                        class="py-4 px-2 text-gray-500 border-b-4 hover:text-orange-800 border-orange-800 font-semibold">
+                        Home
+                    </a>
+                    <a href="./guidelines.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:border-b-4 hover:border-orange-800 hover:text-orange-800 transition duration-300">
+                        Guidelines
+                    </a>
+                    <a href="./gallery.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:border-b-4 hover:border-orange-800 hover:text-orange-800 transition duration-300">
+                        Gallery
+                    </a>
+                    <a href="#contact-us"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:border-b-4 hover:border-orange-800 hover:text-orange-800 transition duration-300">
+                        Contact Us
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none menu-button">
+                        <svg class="w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewBox="0 00 24 24" stroke="currentColor">
+                            <path d="m4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden mobile-menu bg-white">
+                <ul class="flex flex-col text-center">
+                    <li class="active">
+                        <a href="./gallery.html"
+                            class="block.text-sm.px-2.py-4 hover:transition-150 text-white bg-orange-800 font-semibold">
+                            Home
+                    </li>
+                    <li>
+                        <a href="./guidelines.html"
+                            class="block.text-sm.px-2.py-4 hover:bg-orange-800 transition duration-300">
+                            Guidelines
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./gallery.html"
+                            class="block.text-sm.px-2.py-4 hover:bg-orange-800 transition duration-300">
+                            Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact-us"
+                            class="block.text-sm.px-2.py-4 hover:bg-orange-800 transition duration-300">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
     </div>
+    <div id="top"></div>
     <div id="intro">
         <!-- <div class="p-20 bg-sky-200">
             <h3 class="text-xl font-light">Scroll Up and Down to see the parallax effect</h3>
@@ -91,9 +167,9 @@
                 About Us</h1> -->
         </div>
 
-        <div class="p-20 space-y-8">
+        <div class="p-20 space-y-8 z-0">
             <h2 id="about-headline"
-                class="text-center text-gray-800 drop-shadow-md text-4xl italic font-bold font-serif">
+                class="text-center z-0 text-gray-800 drop-shadow-md text-4xl italic font-bold font-serif">
                 About Us
             </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet viverra ante et
@@ -142,46 +218,45 @@
                     class="text-white opacity-80 hover:opacity-100 drop-shadow-md text-4xl italic font-serif outline-2 hover-border-2 font-bold">
                     About Us</h1> -->
         </div>
-
-        <div class="p-20 space-y-8">
-            <h2 id="about-headline"
-                class="text-center text-gray-800 drop-shadow-md text-4xl italic font-bold font-serif">
-                Contact Us
-            </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet viverra ante et
-                tincidunt.
-                Nullam
-                mollis, elit consectetur iaculis tempor, ante augue accumsan odio, ut feugiat eros velit sed nibh.
-                Nam
-                eu
-                eros
-                fermentum, aliquam sem at, accumsan augue. Aenean lacus lorem, interdum vel fermentum sed, sodales
-                id
-                libero.
-                Nullam vulputate commodo urna id mattis. Fusce iaculis maximus felis. Nullam et orci at mi ultricies
-                laoreet
-                et
-                eget ipsum. Aliquam luctus posuere efficitur. Mauris scelerisque leo malesuada tellus malesuada
-                accumsan. Ut
-                non
-                metus velit. Vestibulum lectus nulla, ornare a nisl nec, pretium viverra tellus. Phasellus sit amet
-                magna
-                augue.
-                Sed a diam pulvinar metus auctor tincidunt sed quis purus. Donec id lorem diam.</p>
-
-            <p> Donec eros risus, porttitor eget risus vel, pulvinar hendrerit ante. Maecenas quis pretium metus.
-                Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Nam
-                rutrum,
-                augue
-                et sagittis aliquam, mi nisi lobortis enim, eget egestas sapien urna in turpis. Quisque scelerisque
-                dolor
-                sagittis lorem accumsan, at tempus odio convallis. Nulla venenatis pulvinar ipsum vel auctor.
-                Praesent a
-                enim at
-                erat fringilla lacinia. Aenean eu ultrices ante.</p>
-        </div>
     </div>
+    <div class="p-20 space-y-8">
+        <h2 id="about-headline" class="text-center text-gray-800 drop-shadow-md text-4xl italic font-bold font-serif">
+            Contact Us
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet viverra ante et
+            tincidunt.
+            Nullam
+            mollis, elit consectetur iaculis tempor, ante augue accumsan odio, ut feugiat eros velit sed nibh.
+            Nam
+            eu
+            eros
+            fermentum, aliquam sem at, accumsan augue. Aenean lacus lorem, interdum vel fermentum sed, sodales
+            id
+            libero.
+            Nullam vulputate commodo urna id mattis. Fusce iaculis maximus felis. Nullam et orci at mi ultricies
+            laoreet
+            et
+            eget ipsum. Aliquam luctus posuere efficitur. Mauris scelerisque leo malesuada tellus malesuada
+            accumsan. Ut
+            non
+            metus velit. Vestibulum lectus nulla, ornare a nisl nec, pretium viverra tellus. Phasellus sit amet
+            magna
+            augue.
+            Sed a diam pulvinar metus auctor tincidunt sed quis purus. Donec id lorem diam.</p>
+
+        <p> Donec eros risus, porttitor eget risus vel, pulvinar hendrerit ante. Maecenas quis pretium metus.
+            Vestibulum
+            ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Nam
+            rutrum,
+            augue
+            et sagittis aliquam, mi nisi lobortis enim, eget egestas sapien urna in turpis. Quisque scelerisque
+            dolor
+            sagittis lorem accumsan, at tempus odio convallis. Nulla venenatis pulvinar ipsum vel auctor.
+            Praesent a
+            enim at
+            erat fringilla lacinia. Aenean eu ultrices ante.</p>
+    </div>
+    <script src="./static/js/navbar.js"></script>
 </body>
 
 </html>
