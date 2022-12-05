@@ -99,26 +99,52 @@
         </nav>
     </div>
     <div id="top" class="my-10"></div>
-    <div id="gallery" class="mx-5">
-        <div class="text-center font-serif italic font-bold text-4xl">Gallery</div>
-        <div id="masonry"
-            class="lg:columns-3 columns-1 md:columns-2 rounded-lg lg:border-2 shadow-lg p-2 lg:p-4 lg:m-3">
+    <div class="text-center font-serif italic font-bold text-4xl my-5">Gallery</div>
+    <div id="gallery" class="mx-5 my-10 py-3 lg:border-2 shadow-lg rounded-lg">
+        <div id="masonry" class="lg:columns-3 columns-1 md:columns-2 md:gap-4xl rounded-lg md:mx-3 p-2 lg:py-4 lg:m-3">
+            <div class="aspect-video">
+                <iframe src="https://www.youtube.com/embed/2YCzGhpV0hw"
+                    title="Magnolia Garden (A wonderful Picnic Spot just outside Kolkata)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="w-full h-full lg:hover:scale-110 lg:hover:duration-150 rounded"></iframe>
+                <!-- <iframe width="1118" height="629" src=""
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe> -->
+            </div>
             <img loading="lazy" src="./media/images/img1-min.webp" title="A"
                 class="m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
             <img loading="lazy" src="./media/images/img2-min.webp" title="B"
-                class="m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+                class="m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
             <img loading="lazy" src="./media/images/img3-min.webp" title="C"
                 class="m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <div class="aspect-video">
+                <iframe width="1118" height="629" src="https://www.youtube.com/embed/dhb8SR-DoRc"
+                    title="Long Journey #9 -  Magnolia Garden - Tourist spot, Baruipur, Kolkata" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="w-full h-full lg:hover:scale-110 lg:hover:duration-150 rounded"></iframe>
+            </div>
             <img loading="lazy" src="./media/images/img4-min.webp" title="D"
-                class="m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+                class="m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
             <img loading="lazy" src="./media/images/img5-min.webp" title="E"
                 class="m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
             <img loading="lazy" src="./media/images/img6-min.webp" title="F"
-                class="m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
-
+                class="lazy-load-image m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <img loading="lazy" src="./media/images/img6-min.webp" title="G"
+                class="lazy-load-image hidden m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <img loading="lazy" src="./media/images/img6-min.webp" title="H"
+                class="lazy-load-image hidden m-3 p-4 lg:aspect-square ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+            <img loading="lazy" src="./media/images/img6-min.webp" title="I"
+                class="lazy-load-image hidden m-3 p-4 lg:aspect-video ease-in-out lg:hover:scale-110 lg:hover:duration-150 rounded" />
+        </div>
+        <div class="w-screen items-center justify-center flex">
+            <button
+                class="view-more-button rounded-md px-5 py-3 m-2 text-orange-800 hover:text-white hover:bg-orange-800 border-2 border-orange-800 font-bold">View
+                More +</button>
         </div>
     </div>
     <script src="./static/js/navbar.js"></script>
+    <script src="./static/js/masonry.js"></script>
 </body>
 
 </html>
