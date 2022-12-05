@@ -14,7 +14,7 @@ masonry_btn.addEventListener('click', () => {
         counter += 1;
 
         if (counter * offset > imageList.length) {
-            masonry_btn.innerHTML = '<a href="#" target="blank noreferrer">View even more</a>';
+            masonry_btn.innerHTML = '<a href="https://drive.google.com/drive/folders/1MUzjOhZ88V_5IxKBUcTGDFy77uLI3Snr" target="blank noreferrer">View even more</a>';
         }
     }
 })
